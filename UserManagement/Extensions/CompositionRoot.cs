@@ -14,4 +14,10 @@ public static class CompositionRoot
         IUserAccountService userAccountService = new UserAccountService(userAdminRepository);
         return userAccountService;
     }
+
+    public static ILoginService BuildLoginService()
+    {
+        ILoginService loginService = new OracleLoginService();
+        return loginService;
+    }
 }

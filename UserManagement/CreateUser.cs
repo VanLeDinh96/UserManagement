@@ -18,7 +18,7 @@ public partial class CreateUser : Form
         string username = txtUsername.Text.Trim();
         string password = txtPassword.Text.Trim();
 
-        if (username.Equals(""))
+        if (string.IsNullOrWhiteSpace(username))
         {
             MessageBox.Show("Chưa nhập username!");
             txtUsername.Focus();
@@ -32,7 +32,7 @@ public partial class CreateUser : Form
             return;
         }
 
-        if (password.Equals(""))
+        if (string.IsNullOrWhiteSpace(password))
         {
             MessageBox.Show("Chưa nhập password!");
             txtPassword.Focus();
