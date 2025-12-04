@@ -88,6 +88,7 @@
             btnCreate.TabIndex = 5;
             btnCreate.Text = "Create";
             btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.Click += BtnCreate_Click;
             // 
             // CreateUser
             // 
